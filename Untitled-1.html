@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Formulaire d'inscription</h1>
+    <hr />
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Informations Personnelles</legend>
+        <label for="select">Vous etes</label>
+        <select name="sexe" id="sexe">
+            <option value="melle">Melle</option>
+            <option value="monsieur">Monsieur</option>
+        </select><br><br>
+        <label for="fname">Nom:</label>
+        <input type="text" id="fname" name="fname" placeholder="tapez votre nom ici"/> <br /><br />
+        <label for="lname">Prénom:</label>
+        <input type="text" id="lname" name="lname" placeholder="tapez votre prenom ici"/><br /><br />
+        <label for="email">Année de naissance:</label>
+        <input type="date" id="date" name="date" placeholder="2020"/><br /><br />
+        <label for="pwd">Mot de passe:</label>
+        <input type="password" id="password" name="password" placeholder="tapez votre mot de passe"/><br /><br />
+      </fieldset>
+
+      <hr />
+
+      <fieldset>
+        <legend>Autres informations</legend>
+        Sexe : masculin: <input type="radio" name="sex" /> Féminin:
+        <input type="radio" name="sex" />
+      </fieldset>
+      <hr />
+
+      <fieldset>
+        <legend>Envoyez nous votre photo</legend>
+        <form action="/action_page.php">
+          <input type="file" id="myfile" name="myfile"/><br /><br />
+          <input type="submit" value="Envoyez" /><input type="reset" value="Effacer"/>
+        </form>
+      </fieldset>
+
+      <fieldset>
+        <input type="checkbox" id="accept" name="accept" value="accept"/>
+        J'ai accepte l'inscription<br />
+        <input type="submit" value="Valider" />
+      </fieldset>
+    </form>
+  </body>
+</html>
